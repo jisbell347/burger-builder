@@ -2,3 +2,6 @@
 .DS_Store
 /node_modules
 /vendor
+how-to-use.txt
+
+/config
