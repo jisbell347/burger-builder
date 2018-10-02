@@ -1,9 +1,9 @@
 import React from 'react';
-import Auxiliary from '../../../hoc/Auxiliary'
+import Auxiliary from '../../../hoc/Auxiliary';
 const orderSummary = (props) => {
-	const ingredientSummary = props.ingredients
+	const ingredientSummary = Object.keys(props.ingredients)
 		.map(igKey => {
-			return( <li>
+			return( <li key={igKey}>
 						<span style={{textTransform: 'capitalize'}}>{igKey}: {props.ingredients[igKey]}</span>
 					</li>);
 		});
